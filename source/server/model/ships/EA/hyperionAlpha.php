@@ -63,6 +63,46 @@ class HyperionAlpha extends BaseShip{
         $this->addLeftSystem(new Structure( 4, 60));
         $this->addRightSystem(new Structure( 4, 60));
         $this->addPrimarySystem(new Structure( 4, 54));
+        
+        $this->hitChart = array(
+                0=> array(
+                        10 => "Structure",
+                        12 => "Standard Particle Beam",
+                        14 => "Scanner",
+                        16 => "Engine",
+                        18 => "Hangar",
+                        19 => "Reactor",
+                        20 => "C&C",
+                ),
+                1=> array(
+                        4 => "Thruster",
+                        8 => "Medium Plasma Cannon",
+                        12 => "Interceptor I",
+                        18 => "Structure",
+                        20 => "Primary",
+                ),
+                2=> array(
+                        6 => "Thruster",
+                        10 => "Jump Engine",
+                        13 => "Interceptor I",
+                        18 => "Structure",
+                        20 => "Primary",
+                ),
+                3=> array(
+                        4 => "Thruster",
+                        9 => "Particle Cannon",
+                        11 => "Medium Plasma Cannon",
+                        18 => "Structure",
+                        20 => "Primary",
+                ),
+                4=> array(
+                        4 => "Thruster",
+                        9 => "Particle Cannon",
+                        11 => "Medium Plasma Cannon",
+                        18 => "Structure",
+                        20 => "Primary",
+                ),
+        );
     }
 }
 
