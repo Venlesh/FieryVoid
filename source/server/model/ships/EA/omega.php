@@ -4,8 +4,8 @@ class Omega  extends BaseShip{
     function __construct($id, $userid, $name,  $slot){
         parent::__construct($id, $userid, $name,  $slot);
         
-		$this->pointCost = 925;
-		$this->faction = "EA";
+	$this->pointCost = 925;
+	$this->faction = "EA";
         $this->phpclass = "Omega";
         $this->imagePath = "img/ships/omega.png";
         $this->shipClass = "Omega Destroyer (Alpha)";
@@ -13,8 +13,8 @@ class Omega  extends BaseShip{
         $this->canvasSize = 280;
         $this->fighters = array("normal"=>24);
 	    
-	    $this->isd = 2250;
-	    $this->notes = 'Thunderbolt capable.';
+	$this->isd = 2250;
+	$this->notes = 'Thunderbolt capable.';
         
         $this->forwardDefense = 16;
         $this->sideDefense = 18;
@@ -36,39 +36,39 @@ class Omega  extends BaseShip{
         $this->addFrontSystem(new Thruster(3, 10, 0, 4, 1));
         $this->addFrontSystem(new Thruster(3, 10, 0, 4, 1));
     	$this->addFrontSystem(new HeavyLaser(4, 8, 6, 300, 0));
-		$this->addFrontSystem(new HeavyLaser(4, 8, 6, 0, 60));
-		$this->addFrontSystem(new HeavyPulse(4, 6, 4, 300, 0));
-		$this->addFrontSystem(new HeavyPulse(4, 6, 4, 0, 60));
+	$this->addFrontSystem(new HeavyLaser(4, 8, 6, 0, 60));
+	$this->addFrontSystem(new HeavyPulse(4, 6, 4, 300, 0));
+	$this->addFrontSystem(new HeavyPulse(4, 6, 4, 0, 60));
         $this->addFrontSystem(new InterceptorMkII(2, 4, 2, 240, 60));
         $this->addFrontSystem(new InterceptorMkII(2, 4, 2, 300, 120));
 
         $this->addAftSystem(new Thruster(4, 9, 0, 2, 2));
-		$this->addAftSystem(new Thruster(4, 9, 0, 2, 2));
+	$this->addAftSystem(new Thruster(4, 9, 0, 2, 2));
         $this->addAftSystem(new Thruster(4, 9, 0, 2, 2));
-		$this->addAftSystem(new Thruster(4, 9, 0, 2, 2));
-		$this->addAftSystem(new HeavyLaser(4, 8, 6, 180, 240));
-		$this->addAftSystem(new HeavyLaser(4, 8, 6, 120, 180));
+	$this->addAftSystem(new Thruster(4, 9, 0, 2, 2));
+	$this->addAftSystem(new HeavyLaser(4, 8, 6, 180, 240));
+	$this->addAftSystem(new HeavyLaser(4, 8, 6, 120, 180));
         $this->addAftSystem(new InterceptorMkII(2, 4, 2, 120, 300));
         $this->addAftSystem(new InterceptorMkII(2, 4, 2, 60, 240));
         
-		$this->addLeftSystem(new Thruster(5, 15, 0, 5, 3));
-		$this->addLeftSystem(new StdParticleBeam(2, 4, 1, 180, 0));
-		$this->addLeftSystem(new StdParticleBeam(2, 4, 1, 180, 0));
-		$this->addLeftSystem(new StdParticleBeam(2, 4, 1, 180, 0));
-		$this->addLeftSystem(new StdParticleBeam(2, 4, 1, 180, 0));
-		$this->addLeftSystem(new StdParticleBeam(2, 4, 1, 180, 0));
-		$this->addLeftSystem(new StdParticleBeam(2, 4, 1, 180, 0));
-		$this->addLeftSystem(new InterceptorMkII(2, 4, 2, 180, 0));
+	$this->addLeftSystem(new Thruster(5, 15, 0, 5, 3));
+	$this->addLeftSystem(new StdParticleBeam(2, 4, 1, 180, 0));
+	$this->addLeftSystem(new StdParticleBeam(2, 4, 1, 180, 0));
+	$this->addLeftSystem(new StdParticleBeam(2, 4, 1, 180, 0));
+	$this->addLeftSystem(new StdParticleBeam(2, 4, 1, 180, 0));
+	$this->addLeftSystem(new StdParticleBeam(2, 4, 1, 180, 0));
+	$this->addLeftSystem(new StdParticleBeam(2, 4, 1, 180, 0));
+	$this->addLeftSystem(new InterceptorMkII(2, 4, 2, 180, 0));
 
 		
-		$this->addRightSystem(new Thruster(5, 15, 0, 5, 4));
-		$this->addRightSystem(new StdParticleBeam(2, 4, 1, 0, 180));
-		$this->addRightSystem(new StdParticleBeam(2, 4, 1, 0, 180));
-		$this->addRightSystem(new StdParticleBeam(2, 4, 1, 0, 180));
-		$this->addRightSystem(new StdParticleBeam(2, 4, 1, 0, 180));
-		$this->addRightSystem(new StdParticleBeam(2, 4, 1, 0, 180));
-		$this->addRightSystem(new StdParticleBeam(2, 4, 1, 0, 180));
-		$this->addRightSystem(new InterceptorMkII(2, 4, 2, 0, 180));
+	$this->addRightSystem(new Thruster(5, 15, 0, 5, 4));
+	$this->addRightSystem(new StdParticleBeam(2, 4, 1, 0, 180));
+	$this->addRightSystem(new StdParticleBeam(2, 4, 1, 0, 180));
+	$this->addRightSystem(new StdParticleBeam(2, 4, 1, 0, 180));
+	$this->addRightSystem(new StdParticleBeam(2, 4, 1, 0, 180));
+	$this->addRightSystem(new StdParticleBeam(2, 4, 1, 0, 180));
+	$this->addRightSystem(new StdParticleBeam(2, 4, 1, 0, 180));
+	$this->addRightSystem(new InterceptorMkII(2, 4, 2, 0, 180));
 		
 
                 
@@ -109,14 +109,14 @@ class Omega  extends BaseShip{
                         9 => "Standard Particle Beam",
                         12 => "Interceptor II",
                         18 => "Structure",
-                        20 => "Structure",
+                        20 => "Primary",
                 ),
                 4=> array(
                         4 => "Thruster",
                         9 => "Standard Particle Beam",
                         12 => "Interceptor II",
                         18 => "Structure",
-                        20 => "Structure",
+                        20 => "Primary",
                 ),
         );
     }
