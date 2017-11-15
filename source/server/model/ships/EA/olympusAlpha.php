@@ -52,7 +52,32 @@ class OlympusAlpha extends HeavyCombatVessel{
         $this->addAftSystem(new Structure( 4, 42));
         $this->addPrimarySystem(new Structure( 4, 50));
         
-        
+	$this->hitChart = array(
+                0=> array(
+                        8 => "Structure",
+			11 => "Thruster",
+                        13 => "Scanner",
+                        15 => "Engine",
+                        16 => "Hangar",
+                        19 => "Reactor",
+                        20 => "C&C",
+                ),
+                1=> array(
+                        3 => "Thruster",
+                        5 => "Medium Plasma Cannon",
+			7 => "Railgun",
+			9 => "Interceptor I",
+                        18 => "Structure",
+                        20 => "Primary",
+                ),
+                2=> array(
+                        6 => "Thruster",
+			8 => "Class-SO Missile Rack",
+                        10 => "Interceptor I",
+                        18 => "Structure",
+                        20 => "Primary",
+                ),
+        );        
     }
 
 }
