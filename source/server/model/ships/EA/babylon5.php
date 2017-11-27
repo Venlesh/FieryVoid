@@ -7,7 +7,7 @@ class Babylon5 extends StarBaseSixSections{
 		$this->pointCost = 1000;
 		$this->faction = 'EA';//"EA defenses";
 		$this->phpclass = "Babylon5";
-		$this->shipClass = "Babylon 5";
+		$this->shipClass = "Babylon 5 Diplomatic Station";
 		$this->fighters = array("heavy"=>24); 
 		$this->isd = 2259;
 

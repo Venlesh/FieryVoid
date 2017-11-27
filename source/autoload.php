@@ -527,6 +527,7 @@ spl_autoload_register(
                 'thorunheavynav' => '/server/model/ships/dilgar/thorunHeavyNav.php',
                 
                 //EA from Stock!
+                'babylon5refit' => '/server/model/ships/EA/babylon5Refit.php',
                 'babylon5' => '/server/model/ships/EA/babylon5.php',
                 'stdosat' => '/server/model/ships/EA/stdOSAT.php',
                 'hephaestus' => '/server/model/ships/EA/hephaestus.php',
