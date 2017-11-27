@@ -52,6 +52,7 @@
         public $name = "quadParticleBeam";
         public $displayName = "Quad Particle Beam";
         public $guns = 4;
+        public $iconPath = "quadParticle.png";
     }
 
     class ParticleBlaster extends Particle{

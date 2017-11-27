@@ -182,6 +182,7 @@ spl_autoload_register(
                 'custompulsarlaser' => '/server/model/weapons/customs.php',
                 'hlpa' => '/server/model/weapons/customs.php',
                 'mlpa' => '/server/model/weapons/customs.php',
+            	'interceptormkiii' => '/server/model/weapons/defensive.php',
                 
                 'ltblastcannon' => '/server/model/weapons/pulse.php',
                 'medblastcannon' => '/server/model/weapons/pulse.php',
@@ -519,16 +520,18 @@ spl_autoload_register(
                 'targath' => '/server/model/ships/dilgar/targath.php',
                 'targathc' => '/server/model/ships/dilgar/targathC.php',
                 'tratharti' => '/server/model/ships/dilgar/tratharti.php',
-                'trathartig' => '/server/model/ships/dilgar/trathartiG.php',
-                
+                'trathartig' => '/server/model/ships/dilgar/trathartiG.php',                
                 'thorun' => '/server/model/ships/dilgar/thorun.php',
                 'thorunearly' => '/server/model/ships/dilgar/thorunEarly.php',
                 'thorunheavy' => '/server/model/ships/dilgar/thorunHeavy.php',
                 'thorunheavynav' => '/server/model/ships/dilgar/thorunHeavyNav.php',
                 
-                
-                
                 //EA from Stock!
+                'babylon5' => '/server/model/ships/EA/babylon5.php',
+                'stdosat' => '/server/model/ships/EA/stdOSAT.php',
+                'hephaestus' => '/server/model/ships/EA/hephaestus.php',
+            	'poseidon' => '/server/model/ships/EA/poseidon.php',
+                'laertesassault' => '/server/model/ships/EA/laertesAssault.php',
                 'orion' => '/server/model/ships/EA/orion.php', //starbase
                 'apollo' => '/server/model/ships/EA/apollo.php',
                 'artemisescort' => '/server/model/ships/EA/artemisEscort.php',

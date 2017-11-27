@@ -101,7 +101,37 @@
         }
     }
     
-
+    class InterceptorMkIII extends InterceptorMkI{
+    	public $name = "interceptorMkIII";
+    	public $displayName = "Heavy Interceptor Battery";
+    
+    	public $output = 4;
+    	public $intercept = 4;
+    	public $fireControl = array(10, null, null); // fighters, <mediums, <capitals
+    
+    	/*already declared in MkI
+    	 public function getDefensiveHitChangeMod($target, $shooter, $pos, $turn, $weapon){
+    	 if($this->isDestroyed($turn-1) || $this->isOfflineOnTurn($turn))
+    	 	return 0;
+    
+    	 	$output = $this->output;
+    	 	$output -= $this->outputMod;
+    	 	return $output;
+    	 	}
+    
+    	 	public function getDefensiveDamageMod($target, $shooter, $pos, $turn, $weapon){
+    	 	return 0;
+    	 	}
+    	 	*/
+    	 public function setSystemDataWindow($turn){
+    	 	parent::setSystemDataWindow($turn);
+    	 	$this->data["DEFENSIVE BONUS:"] = "-20 to hit on arc";
+    	 }
+    	 public function getDamage($fireOrder){        return Dice::d(10, 2)+6;   }
+    	 public function setMinDamage(){     $this->minDamage = 8 ;      }
+    	 public function setMaxDamage(){     $this->maxDamage = 26 ;      }    	 
+    }
+    
     class InterceptorPrototype extends InterceptorMkI{
         public $name = "interceptorPrototype";
         public $displayName = "Interceptor Prototype";
